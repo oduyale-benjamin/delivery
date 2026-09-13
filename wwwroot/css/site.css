@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff8f0;
+    color: #2b160b;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+
+    background: #b22222 !important;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: white !important;
+}
+
+.nav-link {
+    color: rgb(216, 9, 9) !important;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    color: #ffd166 !important;
+}
+
+
+
+.menu-header {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.menu-header h1 {
+    font-size: 45px;
+    color: #b22222;
+}
+
+.menu-header p {
+    font-size: 18px;
+
+}

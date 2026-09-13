@@ -1,0 +1,30 @@
+@* @model IEnumerable<pizza.Models.Pizza> *@
+
+@{
+ ViewData["Title"] = "Pizza Menu";
+<a asp-action="Create" class="btn-success">+ADD PIZZA</a>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pizza in Model){
+            <tr>
+                <td>@pizza.Name</td>
+                <td>#@pizza.Price.ToString("N0")</td>
+                <td>@pizza.Category</td>
+                <td>
+                    <a asp-action="Detail" asp-route-id="@pizza.Id" class="btn-detail">Details</a>
+                    <a asp-action="Edit" asp-route-id="@pizza.Id" class="btn-edit">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@pizza.Id" calss="btn-delete">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+}
