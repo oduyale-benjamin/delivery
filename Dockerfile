@@ -4,8 +4,7 @@ WORKDIR /src
 COPY . .
 
 RUN dotnet restore "pizza.csproj"
-RUN dotnet publish "pizza.csproj"
-Release -o /app/publish
+RUN dotnet publish "pizza.csproj" -c Release -o /app/publish
 
 FROM mcr.microsoft.com/dotnet/
 aspnet:10.0 AS final
