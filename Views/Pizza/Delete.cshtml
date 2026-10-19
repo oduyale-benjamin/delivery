@@ -5,10 +5,10 @@
 <h1>Delete Pizza</h1>
 <p>Are you sure you want to delete</p>
 <p><strong>@Model.Name</strong></p>
-<p>#@Model.Price.ToString("N0")</p>
+<p>₦@Model.Price.ToString("N0")</p>
 
 <form asp-action="Delete" method="post">
     <input type="hidden" asp-for="Id" />
-    <button type="submit">YES,Delete</button>
-    <a asp-action="Index" class="btn-secondary"></a>
+    <button type="submit" class="button">YES,Delete</button><br />
+    <a asp-action="Index" class="btn-secondary">Back</a>
 </form>
