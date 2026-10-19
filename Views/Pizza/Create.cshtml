@@ -3,17 +3,17 @@
     ViewData["Title"] = "Pizza Menu";
 }
 <h1>Add New Pizza</h1>
-<form asp-action="Create" method="post">
-        <label asp-for="Name" class="form-label">Pizza Name</label>
-        <input asp-for="Name" class="form-control" />
+<form asp-action="Create" method="post" class="form-card">
+        <label asp-for="Name" class="form-label">Pizza Name: </label>
+        <input asp-for="Name"  />
         <br />
-        <label asp-for="Price" class="form-label"></label>
-        <input asp-for="Price" type="number" class="form-label" />
+        <label asp-for="Price" class="form-label">Price: </label>
+        <input asp-for="Price" type="number"  />
         <br />
-        <label asp-for="Category" class="form-label"></label>
-        <input asp-for="Category" class="form-label" />
+        <label asp-for="Category" class="form-label">Category: </label>
+        <input asp-for="Category"  />
         <br />
-        <button type="submit" class="btn-success">Create Pizza</button>
+        <button type="submit" class="button">Create Pizza</button>
         <a asp-action="Index" class="btn-secondary">Back</a>
 
 </form>
