@@ -3,16 +3,16 @@
     ViewData["Title"] = "Edit Pizza";
 }
 <h1>Edit Pizza</h1>
-<form asp-action="Edit" method="post">
+<form asp-action="Edit" method="post" class="form-card">
         <label asp-for="Name" class="form-label">Pizza Name</label>
-        <input asp-for="Name" class="form-control" />
+        <input asp-for="Name"  />
         <br />
         <label asp-for="Price" class="form-label">Price</label>
-        <input asp-for="Price" type="number" class="form-label" />
+        <input asp-for="Price" type="number"  />
         <br />
         <label asp-for="Category" class="form-label">Category</label>
-        <input asp-for="Category" class="form-label" />
+        <input asp-for="Category"  />
         <br />
-        <button type="submit" class="btn-success">Create Pizza</button>
+        <button type="submit" class="button">Create Pizza</button>
         <a asp-action="Index" class="btn-secondary">Cancel</a>
 </form>
