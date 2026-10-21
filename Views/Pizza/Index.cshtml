@@ -2,6 +2,7 @@
 
 @{
  ViewData["Title"] = "Pizza Menu";
+
 <div class="card-grid">
         @foreach (var pizza in Model){
             <div class="pizza-card">
@@ -20,6 +21,7 @@
                     }
                 </div>
                 <br />
-                <button class="button"><a asp-action="Create"style="color:white" >+ADD PIZZA</a></button>
+                <a asp-action="Create"style="color:white" ><button class="button" style="color:white;left:50px;position:relative">+ADD PIZZA</button></a>
+                
 
 }
