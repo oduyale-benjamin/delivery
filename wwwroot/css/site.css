@@ -1,11 +1,36 @@
-body {
+
+html, body{
+    min-height: 100%;
     margin: 0;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
-    background-image:url('/images/pizza_image.jpg');
-    background-repeat: no-repeat;
-    min-height: 100hv;
+    min-height: 100vh;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: #000000;
     /* background-position: center; */
+}
+.main-content{
+    /* flex:1; */
+    background-image:url('/images/pizza_image.jpg');
+    background-size: 100%,100%;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    width:100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+@media screen and (max-width:800px){
+    .main-content {
+        background-image:url('/images/pizza_image_android.jpg') ;
+    }
 }
 
 a {
